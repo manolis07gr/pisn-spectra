@@ -1,0 +1,16 @@
+Runs:
+
+run001: the test problem set up from following the directions on https://bitbucket.org/drrossum/supernu/wiki/use_instructions.md
+
+run002_1D_data: 
+	- Uses the P250 high-res 1D data as input 
+	- Has the same input.par as in run001
+	- PROBLEM: this is a truncated version at r~2.7e10 cm/vel=8.44e8
+		- this is due to a velocity feature in the profile which does not pass the monotonicity check.
+
+run003_1D_data: 
+	- I noticed a warning print to the screen when running run002_1D_data:
+		"WARNING: input.str temp overridden by gas_gastempinit"
+		- in_gas_gastempinit is set in the input.par file and overrides the input temperature profile to a uniform gas temperature. It has to be set it to 0d0 to not override. I did this for this run.
+		- The energies in output.tot_energy are about 10 orders of magnitude too high now. Not sure what the problem is.
+	- This directory also contains a prototype input file using the left and right values for radius as coordinates. Using this we could pass the monotonicity test. I have not yet been able to get it to work. It's called 'input_r.str'. There is also a corresponding 'input_r.par' that I've been playing around with but there is always an error message. Also, there is no way I have found to put in velocities if they are not the coordinate. I set in_isvelocity to false but then it still tries to create the grid from input parameters instead of the input structure.

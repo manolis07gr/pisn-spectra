@@ -1,0 +1,243 @@
+
+ ion_read_data:
+ ---------------------------
+ # compressed levels per ion
+   |    1    2    3    4    5    6    7    8    9   10
+---|--------------------------------------------------
+  1|    9    1
+  2|   11   14    1
+  3|    9   10    1
+  4|   10    8    6    1
+  5|    9   10    8    5    1
+  6|   20   28   23   11    1
+  7|   21   28   26   24   12    5    1
+  8|   16   37   42   38   30   12    1
+  9|   17   31   55   43   33    6    1
+ 10|   18   38   17   36   20   13    1
+ 11|    9   10   24   16   26   39    1
+ 12|   14   15   23   21   19   35    1
+ 13|   13   25   15   13   25   17    1
+ 14|   19   22   29   17   17   17    1
+ 15|   21   23   19   17   16    5    1
+ 16|   19   23   14   11    7   14    1
+ 17|   21   33   28   14   10    1
+ 18|   18   49   29   15   10    1
+ 19|   12   10   15   11   14    1
+ 20|   18   20   53  130  205  272  245  155  114    1
+ 21|   32   39   22   80  194  283  351  303  175    1
+ 22|   46   70   47   35  133  256  368  435  359    1
+ 23|   49   88  107   82   51  166  335  472  494    1
+ 24|   34   96  137  149  118   72  181  409  548    1
+ 25|   32   84  156  196  215  182  107  203  481    1
+ 26|   49  100  139  229  275  286  215  106  215    1
+ 27|   48   97  160  209  301  316  370  251  128    1
+ 28|   33   78  145  231  291  414  409  437  277    1
+ 29|   15   52    1
+ 30|   11    3   41    1
+
+ ionization energy per ion [eV]
+   |           1           2           3           4           5           6           7           8           9          10
+---|------------------------------------------------------------------------------------------------------------------------
+  1|  1.3598E+01  0.0000E+00
+  2|  2.4587E+01  5.4418E+01  0.0000E+00
+  3|  5.3917E+00  7.5640E+01  0.0000E+00
+  4|  9.3227E+00  1.8211E+01  1.5389E+02  0.0000E+00
+  5|  8.2980E+00  2.5155E+01  3.7931E+01  2.5938E+02  0.0000E+00
+  6|  1.1260E+01  2.4383E+01  4.7888E+01  6.4494E+01  0.0000E+00
+  7|  1.4534E+01  2.9601E+01  4.7449E+01  7.7474E+01  9.7890E+01  5.5207E+02  0.0000E+00
+  8|  1.3618E+01  3.5117E+01  5.4936E+01  7.7414E+01  1.1390E+02  1.3812E+02  0.0000E+00
+  9|  1.7423E+01  3.4971E+01  6.2708E+01  8.7140E+01  1.1424E+02  1.5716E+02  0.0000E+00
+ 10|  2.1565E+01  4.0963E+01  6.3455E+01  9.7117E+01  1.2622E+02  1.5793E+02  0.0000E+00
+ 11|  5.1391E+00  4.7286E+01  7.1620E+01  9.8915E+01  1.3840E+02  1.7218E+02  0.0000E+00
+ 12|  7.6462E+00  1.5035E+01  8.0144E+01  1.0927E+02  1.4127E+02  1.8676E+02  0.0000E+00
+ 13|  5.9858E+00  1.8829E+01  2.8448E+01  1.1999E+02  1.5383E+02  1.9048E+02  0.0000E+00
+ 14|  8.1517E+00  1.6346E+01  3.3493E+01  4.5142E+01  1.6677E+02  2.0527E+02  0.0000E+00
+ 15|  1.0487E+01  1.9769E+01  3.0203E+01  5.1444E+01  6.5025E+01  2.2042E+02  0.0000E+00
+ 16|  1.0360E+01  2.3338E+01  3.4790E+01  4.7222E+01  7.2594E+01  8.8053E+01  0.0000E+00
+ 17|  1.2968E+01  2.3814E+01  3.9613E+01  5.3465E+01  6.7819E+01  0.0000E+00
+ 18|  1.5760E+01  2.7630E+01  4.0741E+01  5.9810E+01  7.5023E+01  0.0000E+00
+ 19|  4.3407E+00  3.1628E+01  4.5806E+01  6.0913E+01  8.2660E+01  0.0000E+00
+ 20|  6.1132E+00  1.1872E+01  5.0913E+01  6.7274E+01  8.4508E+01  1.0878E+02  1.2721E+02  1.4724E+02  1.8854E+02  0.0000E+00
+ 21|  6.5615E+00  1.2800E+01  2.4757E+01  7.3489E+01  9.1686E+01  1.1068E+02  1.3799E+02  1.5808E+02  1.8003E+02  0.0000E+00
+ 22|  6.8204E+00  1.3576E+01  2.7492E+01  4.3267E+01  9.9299E+01  1.1953E+02  1.4085E+02  1.7035E+02  1.9205E+02  0.0000E+00
+ 23|  6.7398E+00  1.4655E+01  2.9311E+01  4.6709E+01  6.5282E+01  1.2813E+02  1.5064E+02  1.7345E+02  2.0581E+02  0.0000E+00
+ 24|  6.7665E+00  1.6486E+01  3.0959E+01  4.9160E+01  6.9456E+01  9.0635E+01  1.6018E+02  1.8474E+02  2.0929E+02  0.0000E+00
+ 25|  7.4340E+00  1.5640E+01  3.3668E+01  5.1205E+01  7.2407E+01  9.5604E+01  1.1920E+02  1.9453E+02  2.2181E+02  0.0000E+00
+ 26|  7.9024E+00  1.6188E+01  3.0651E+01  5.4801E+01  7.5010E+01  9.9063E+01  1.2498E+02  1.5106E+02  2.3359E+02  0.0000E+00
+ 27|  7.8643E+00  1.7084E+01  3.3501E+01  5.1267E+01  7.9474E+01  1.0204E+02  1.2894E+02  1.5783E+02  1.8614E+02  0.0000E+00
+ 28|  7.6374E+00  1.8169E+01  3.5187E+01  5.4925E+01  7.6064E+01  1.0787E+02  1.3266E+02  1.6242E+02  1.9342E+02  0.0000E+00
+ 29|  7.7264E+00  2.0292E+01  0.0000E+00
+ 30|  9.3942E+00  1.7964E+01  3.9723E+01  0.0000E+00
+ read_atom successful:           1           1         930        1016
+ read_atom successful:           2           1         493        1471
+ read_atom successful:           2           2          92         463
+ read_atom successful:           3           1          76         319
+ read_atom successful:           3           2          49          88
+ read_atom successful:           4           1          34          39
+ read_atom successful:           4           2          57         186
+ read_atom successful:           4           3          18          19
+ read_atom successful:           5           1          37          79
+ read_atom successful:           5           2          33          33
+ read_atom successful:           5           3          43         124
+ read_atom successful:           5           4          10           8
+ read_atom successful:           6           1         431        5338
+ read_atom successful:           6           2          92         936
+ read_atom successful:           6           3         132         432
+ read_atom successful:           6           4          59         180
+ read_atom successful:           7           1         363        5660
+ read_atom successful:           7           2         252        1461
+ read_atom successful:           7           3         145         299
+ read_atom successful:           7           4         140         442
+ read_atom successful:           7           5          67         231
+ read_atom successful:           7           6          17          14
+ read_atom successful:           8           1         163         566
+ read_atom successful:           8           2         293        1970
+ read_atom successful:           8           3         241         994
+ read_atom successful:           8           4         219         447
+ read_atom successful:           8           5         150         496
+ read_atom successful:           8           6          58         165
+ read_atom successful:           9           1         176        1570
+ read_atom successful:           9           2         252         704
+ read_atom successful:           9           3         428        3640
+ read_atom successful:           9           4         190         756
+ read_atom successful:           9           5         112         242
+ read_atom successful:           9           6          15          13
+ read_atom successful:          10           1         414        3397
+ read_atom successful:          10           2         487        4996
+ read_atom successful:          10           3         100         431
+ read_atom successful:          10           4         132         550
+ read_atom successful:          10           5          63         171
+ read_atom successful:          10           6          43          55
+ read_atom successful:          11           1          74         289
+ read_atom successful:          11           2          47         181
+ read_atom successful:          11           3          96         559
+ read_atom successful:          11           4          46         136
+ read_atom successful:          11           5          62         215
+ read_atom successful:          11           6         111         363
+ read_atom successful:          12           1         443        1793
+ read_atom successful:          12           2         107         430
+ read_atom successful:          12           3         158         811
+ read_atom successful:          12           4          67         268
+ read_atom successful:          12           5          47         144
+ read_atom successful:          12           6          64         242
+ read_atom successful:          13           1         282         783
+ read_atom successful:          13           2         252        2149
+ read_atom successful:          13           3          83         264
+ read_atom successful:          13           4          43         147
+ read_atom successful:          13           5          55          88
+ read_atom successful:          13           6          34         100
+ read_atom successful:          14           1         346        4116
+ read_atom successful:          14           2          97         956
+ read_atom successful:          14           3         239        1177
+ read_atom successful:          14           4          74         234
+ read_atom successful:          14           5          51         131
+ read_atom successful:          14           6          37          52
+ read_atom successful:          15           1         279        1213
+ read_atom successful:          15           2         160        1094
+ read_atom successful:          15           3          82         157
+ read_atom successful:          15           4          75         173
+ read_atom successful:          15           5          57         167
+ read_atom successful:          15           6          10           9
+ read_atom successful:          16           1         216        3009
+ read_atom successful:          16           2         138         742
+ read_atom successful:          16           3          57         190
+ read_atom successful:          16           4          39          71
+ read_atom successful:          16           5          25          41
+ read_atom successful:          16           6          48         118
+ read_atom successful:          18           1         374        3553
+ read_atom successful:          18           2         486        7989
+ read_atom successful:          18           3         138         996
+ read_atom successful:          18           4          44         149
+ read_atom successful:          18           5          20          55
+ read_atom successful:          19           1         109         598
+ read_atom successful:          19           2          34          67
+ read_atom successful:          19           3          63         230
+ read_atom successful:          19           4          23          62
+ read_atom successful:          19           5          33         124
+ read_atom successful:          20           1         185        1997
+ read_atom successful:          20           2          72         745
+ read_atom successful:          20           3         265        4808
+ read_atom successful:          20           4         202        2367
+ read_atom successful:          20           5         346        5907
+ read_atom successful:          20           6         311        5218
+ read_atom successful:          20           7         259        3802
+ read_atom successful:          20           8         151        1712
+ read_atom successful:          20           9         176        2583
+ read_atom successful:          21           1         372        7390
+ read_atom successful:          21           2         278        5535
+ read_atom successful:          21           3          57         345
+ read_atom successful:          21           4         184        2723
+ read_atom successful:          21           5         222        4139
+ read_atom successful:          21           6          37         114
+ read_atom successful:          21           7         357        5196
+ read_atom successful:          21           8         271        3756
+ read_atom successful:          21           9         146        1558
+ read_atom successful:          22           1         954       22552
+ read_atom successful:          22           2         445        9605
+ read_atom successful:          22           3         179        2903
+ read_atom successful:          22           4          76         547
+ read_atom successful:          22           5         158        2662
+ read_atom successful:          22           6         291        4975
+ read_atom successful:          22           7         436        5523
+ read_atom successful:          22           8         380        4571
+ read_atom successful:          22           9         289        3594
+ read_atom successful:          23           1         733       14574
+ read_atom successful:          23           2         684       15685
+ read_atom successful:          23           3         564       10821
+ read_atom successful:          23           4         213        3728
+ read_atom successful:          23           5          98         926
+ read_atom successful:          23           6         181        3004
+ read_atom successful:          23           7         295        4390
+ read_atom successful:          23           8         482        5406
+ read_atom successful:          23           9         388        4321
+ read_atom successful:          24           1         492        5693
+ read_atom successful:          24           2        1051       22054
+ read_atom successful:          24           3         810       16371
+ read_atom successful:          24           4         412        7493
+ read_atom successful:          24           5         184        3061
+ read_atom successful:          24           6         107        1187
+ read_atom successful:          24           7         192        2895
+ read_atom successful:          24           8         318        4068
+ read_atom successful:          24           9         497        5126
+ read_atom successful:          25           1         352        4210
+ read_atom successful:          25           2         660       10781
+ read_atom successful:          25           3        1044       21674
+ read_atom successful:          25           4         834       13701
+ read_atom successful:          25           5         382        6796
+ read_atom successful:          25           6         284        4763
+ read_atom successful:          25           7         113        1296
+ read_atom successful:          25           8         167        2563
+ read_atom successful:          25           9         332        3797
+ read_atom successful:          26           1        1108       19115
+ read_atom successful:          26           2        1321       26384
+ read_atom successful:          26           3         902       18752
+ read_atom successful:          26           4        1278       24253
+ read_atom successful:          26           5        1194       20380
+ read_atom successful:          26           6         579        8652
+ read_atom successful:          26           7         333        5098
+ read_atom successful:          26           8         113        1331
+ read_atom successful:          26           9         164        2464
+ read_atom successful:          27           1         515       10136
+ read_atom successful:          27           2         742       15026
+ read_atom successful:          27           3         892       20081
+ read_atom successful:          27           4         889       16430
+ read_atom successful:          27           5        1738       24167
+ read_atom successful:          27           6        1018       14433
+ read_atom successful:          27           7         497        7270
+ read_atom successful:          27           8         259        3795
+ read_atom successful:          27           9         111        1376
+ read_atom successful:          28           1         378        5869
+ read_atom successful:          28           2         830       16626
+ read_atom successful:          28           3         867       18508
+ read_atom successful:          28           4        1187       24111
+ read_atom successful:          28           5        1200       22345
+ read_atom successful:          28           6        2100       29336
+ read_atom successful:          28           7         804       11117
+ read_atom successful:          28           8         514        7241
+ read_atom successful:          28           9         231        3525
+ read_atom successful:          29           1          96         846
+ read_atom successful:          29           2         411        6649
+ read_atom successful:          30           1          55         135
+ read_atom successful:          30           2           8           6
+ read_atom successful:          30           3         366        2826
+ total number of lines read:  781930
